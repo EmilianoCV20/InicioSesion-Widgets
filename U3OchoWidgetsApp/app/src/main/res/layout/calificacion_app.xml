@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CalificacionApp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="¡CALIFICA LA APP!"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rbarCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#2F41B1"
+        android:numStars="5"
+        android:progressTint="#FFC107"
+        android:rating="3"
+        android:stepSize="0.25"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="617dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnEnviarClick"
+        android:text="ENVIAR CALIFICACION"
+        android:textSize="20sp" />
+
+</LinearLayout>
